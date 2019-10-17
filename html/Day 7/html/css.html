@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css- index</title>
+    <style>
+        #demo, .test{
+            color: aqua;
+            background-color: lightcoral;
+            text-align: center;
+        }
+        body{
+            background-color: lightblue;
+        }
+        /* .test{
+            color: lightblue;
+            background-color: gainsboro;
+            text-align: center;
+        } */
+        /* [title~="flower"]{
+            background-color:yellow;
+        } */
+        [title|="flower"]{
+            background-color: blue;
+            color: white;
+        }
+        a[target="_blank"]{
+            background-color: lightgreen;
+        }
+        /* a{
+            background-color: lightslategrey;
+        } */
+        input[type="text"]{
+            width: 50%;
+            height: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <a href="#" target="_blank">with target blank</a>
+    <a href="#" target="#">with target blank</a>
+    <h1 title="flower">Hello flower title</h1>
+    <h1 title="flower-top">Hello flower title</h1>
+    <h1 title="flowertop">Hello flower title</h1>
+    <!-- id and class selector -->
+    <h1 id="demo">Welcome to css lesson</h1>
+    <h1 id="test">
+        welcome to class selector
+    </h1>
+    <h1 id="test">
+        welcome to class selector
+    </h1>
+    <h1 id="test">
+        welcome to class selector
+    </h1>
+    <h1 id="test">
+        welcome to class selector
+    </h1>
+</body>
+
+</html>
